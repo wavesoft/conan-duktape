@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(duktape)
+include_directories(src)
+file(GLOB sources src/*.c)
+add_library(duktape ${sources})
